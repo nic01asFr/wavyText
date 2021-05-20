@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(rgb(170, 195, 241) , rgb(45, 94, 184) );
+}
+#textDiv{
+background: url('waves3.png');
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+background-size: contain;
+margin: auto;
+
+filter: invert(75%);
+transition: letter-spacing 2.5s ease-in ;
+
+
+font-size: 3.5em;
+font-weight: 900;
+letter-spacing: 0.1em;
+
+animation: motion 30s infinite ease-in-out 1s;
+}
+
+
+#textDiv:hover{
+    letter-spacing: 0.3em;
+    margin: 0.2em;
+    transition: 2.5s ease-out ;
+}
+
+
+@keyframes motion{
+    0%{ 
+        background-position-x: left;
+    }
+    50%{
+        background-position-x: right ;
+    }
+    100%{
+        background-position-x: left ;
+    }
+}
+
